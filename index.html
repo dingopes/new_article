@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 Forms</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/tinymce/tinymce.min.js" type="text/javascript"></script>
+  <script src="js/tinymce/jquery.tinymce.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+  tinymce.init({
+    selector: '#myTextarea',
+    theme: 'modern',
+    width: 600,
+    height: 300,
+    plugins: [
+      'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+      'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+      'save table contextmenu directionality emoticons template paste textcolor'
+    ],
+    content_css: 'css/custom.css',
+    toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
+  });
+  </script>
+</head>
+
+
+
+
+
+<body>
+
+
+  <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding navigace</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    
+  </head>
+  <body>
+<div id="container">
+  <header>
+    <a href="#" id="toggleMenu"><img src="images/menu.png"/></a>
+    <div class="row">
+      <ul>
+        <li id="menuOut"><img src="images/back.png"/></li>
+        <li><a href="#">Domů</a></li>
+        <li class="selected"><a href="#">Články</a></li>
+        </ul>
+    </div>
+  </header>
+
+
+  
+
+    <div class="row">
+    <div class="large-12 columns">
+      <h1>Přidat nový článek</h1>
+    </div>
+    </div>
+
+
+<form>
+      <div class="row">
+    <div class="large-12 columns formField">
+      <label>Název článku
+        <br>
+        <input type="text" placeholder="" />
+      </label>
+    </div>
+  </div>
+<div class="row">
+    <div class="large-12 columns formField">
+      <label>Jméno autora
+        <br>
+        <input type="text" placeholder="" />
+      </label>
+    </div>
+  </div>
+<div class="row">
+      <div class="medium-9 columns formField" id="form-container">  
+        <textarea id="myTextarea">Hello, World!</textarea>
+      </div>
+    </div>
+   
+<div class="row">
+  <div class="medium-9 columns formField" id="form-container">
+<input type="submit" class="button radius" name="btn" id="btn" value="Submit">
+  </div>
+    </div>
+  </div>
+</form>
+
+  
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+  
+
+ 
